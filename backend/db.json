@@ -1,0 +1,21 @@
+{
+    "address": {
+      "city": "string",
+      "country": "string",
+      "description": "string",
+      "district": "string",
+      "lat": 0,
+      "lng": 0,
+      "name": "string",
+      "number": "string",
+      "state": "st",
+      "street": "string",
+      "zipcode": "string"
+    },
+    "user": {
+      "document": "string",
+      "email": "string",
+      "name": "string",
+      "phone": "string"
+    }
+  }
