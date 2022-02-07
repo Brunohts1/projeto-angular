@@ -7,3 +7,21 @@
 .home .subtitle{
     font-size: 1.rem;
 }
+
+.card-vendedores {
+    display: flex;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+}
+div {
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+button {
+    margin-top: 25px;
+    float: right; 
+}
