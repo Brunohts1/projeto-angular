@@ -13,8 +13,8 @@ export class SellerCrudComponent implements OnInit {
   ngOnInit(): void {
   }
 
-navigateToProductCreate(): void {
-  this.router.navigate(['sellers/create'])
+navigateToSellerCreate(): void {
+  this.router.navigate(['/sellers/create'])
 }
 
 }

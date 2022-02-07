@@ -1,5 +1,6 @@
 {
-    "address": {
+  "address": [
+    {
       "city": "string",
       "country": "string",
       "description": "string",
@@ -11,11 +12,15 @@
       "state": "st",
       "street": "string",
       "zipcode": "string"
-    },
-    "user": {
-      "document": "string",
-      "email": "string",
-      "name": "string",
-      "phone": "string"
     }
-  }
+  ],
+  "seller": [
+    {
+      "id": 1,
+      "document": "vendedor teste2",
+      "email": "emasdail@email.com",
+      "name": "Vendedor Teste",
+      "phone": "4299933asd5335"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 export interface Seller {
-    id: number;
+    id?: number;
     name: string;
     email: string;
     document: string;

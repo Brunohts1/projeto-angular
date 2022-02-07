@@ -1,6 +1,7 @@
 import { SellerService } from './../seller.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Seller } from '../seller.model';
 
 @Component({
   selector: 'app-seller-create',
@@ -9,19 +10,28 @@ import { Router } from '@angular/router';
 })
 export class SellerCreateComponent implements OnInit {
 
+  seller: Seller = {
+    document: '',
+    email: '',
+    name: '',
+    phone: ''
+  }
+
   constructor(private sellerService: SellerService,
       private router: Router) { }
 
   ngOnInit(): void {
   }
-  
+
   createSeller(): void {
-    this.sellerService.showMessage('Operação executada com sucesso');
+    this.sellerService.create(this.seller).subscribe(() => {
+      this.sellerService.showMessage('Vendedor Criado')
+      this.router.navigate(['/sellers'])
+    })
 
+    
   }
-
   cancel(): void {
     this.router.navigate(['/sellers'])
   }
-
 }

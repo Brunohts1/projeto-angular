@@ -1,1 +1,23 @@
-<p>seller-create works!</p>
+<mat-card>
+    <mat-card-title>Novo Vendedor</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="CPF">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Email">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Telefone">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="createSeller()" color="primary">
+        Salvar
+    </button>
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
