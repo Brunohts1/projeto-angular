@@ -1,7 +1,7 @@
 export interface Seller {
-    id?: number;
+    id: number;
     name: string;
     email: string;
-    document: string;
-    phone: string
+    document?: string;
+    phone?: string
 }

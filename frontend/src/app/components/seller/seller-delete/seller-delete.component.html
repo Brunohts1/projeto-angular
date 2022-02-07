@@ -1,0 +1,28 @@
+<mat-card>
+    <mat-card-title class="card">Excluir Vendedor</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" 
+                [value]="seller.name" name="name" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="CPF"
+            [value]="seller.document" name="cpf" disabled>  
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Email" 
+                [value]="seller.email" name="email" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Telefone" 
+                [value]="seller.phone" name="phone" disabled>
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="deleteSeller()" color="warn">
+        Deletar
+    </button>
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
+

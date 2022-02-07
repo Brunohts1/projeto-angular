@@ -19,9 +19,18 @@ import { SellerCreateComponent } from './components/seller/seller-create/seller-
 import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule} from '@angular/material/snack-bar';
 import {HttpClientModule} from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { SellerReadComponent } from './components/seller/seller-read/seller-read.component';
+import { SellerRead2Component } from './components/seller/seller-read2/seller-read2.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { SellerUpdateComponent } from './components/seller/seller-update/seller-update.component';
+import { SellerDeleteComponent } from './components/seller/seller-delete/seller-delete.component';
+
+
 
 @NgModule({
   declarations: [
@@ -31,10 +40,15 @@ import { MatInputModule } from '@angular/material/input';
     NavComponent,
     HomeComponent,
     SellerCrudComponent,
-    SellerCreateComponent
+    SellerCreateComponent,
+    SellerReadComponent,
+    SellerRead2Component,
+    SellerUpdateComponent,
+    SellerDeleteComponent
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
@@ -46,7 +60,10 @@ import { MatInputModule } from '@angular/material/input';
     HttpClientModule,
     FormsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]

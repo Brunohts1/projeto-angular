@@ -11,6 +11,7 @@ import { Seller } from '../seller.model';
 export class SellerCreateComponent implements OnInit {
 
   seller: Seller = {
+    id: 0,
     document: '',
     email: '',
     name: '',

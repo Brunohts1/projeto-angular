@@ -1,0 +1,28 @@
+<mat-card>
+    <mat-card-title class="card">Alterar Vendedor</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" 
+                [(ngModel)]="seller.name" name="name">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="CPF"
+            [(ngModel)]="seller.document" name="cpf">  
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Email" 
+                [(ngModel)]="seller.email" name="email">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Telefone" 
+                [(ngModel)]="seller.phone" name="phone">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="updateSeller()" color="warn">
+        Atualizar
+    </button>
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
+
